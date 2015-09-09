@@ -1,34 +1,516 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<!DOCTYPE html>
+<html>
 
-<html lang="en" class="no-js">
   <head>
-    <title>dicomNext</title>
-    <link rel="shortcut icon" href="../favicon.ico">
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/bootstrap-theme.min.css">
-    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <!--[if lt IE 9]>
-      <script src="js/html5shiv.js"></script>
-      <script src="js/respond.js"></script>
-    <![endif]--> 
-  </head>
-  <body>
-    <div class="row">
-  <div class="col-xs-12 col-sm-12 col-lg-12 white">
-    <img src="img/logo_dicom.png">
-      <p class="description-black">the next cross-platform, </br> extensible DICOM viewer</p>
-      <p class="description-black">Coming soon</p>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>DICOM•NEXT</title>
+
+  <link rel="shortcut icon" href="../favicon.ico">
+  <link rel="stylesheet" href="css/landing.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+  <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <!--[if lt IE 9]>
+    <script src="js/html5shiv.js"></script>
+    <script src="js/respond.js"></script>
+  <![endif]-->
+
+</head>
+
+
+  <body id="page-top">
+
+
+
+    <div id="home-container" class="index">
+      <div class="homepage-container">
+
+        <nav class="navbar navbar-default-landing navbar-fixed-top">
+
+  <div class="navbar-header page-scroll">
+    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </button>
+    <a class="navbar-brand page-scroll" href="http://www.orobix.com" target="_blank"><img class="img-logo img-responsive" src="img/logo_orobix.png"></img> </a>
   </div>
-  <div class="col-xs-12 col-sm-12 col-lg-12 white">
-    <img class="img-resp" src="img/dicom_next.jpg">
+
+  <div class="collapse nav navbar-collapse" id="bs-example-navbar-collapse-1">
+    <ul class="nav navbar-nav navbar-right">
+
+        <li class="hidden active">
+            <a href="#page-top"></a>
+        </li>
+        <li class="">
+            <a class="page-scroll" href="#about">About</a>
+        </li>
+        <li class="">
+            <a class="page-scroll" href="#modules">Features</a>
+        </li>
+        <!-- <li class="">
+            <a class="page-scroll" href="#tutorials">Tutorials</a>
+        </li>
+        <li class="">
+            <a href="#" target="_blank">Support</a>
+        </li> -->
+
+     </ul>
+  </div>
+</nav>
+
+
+        <header>
+
+  <div class="container">
+
+    <div class="intro-text">
+      <img class="dicomnext-logo" src="img/logo_dicomnext.png"></img>
+      <div class="intro-lead-in">
+        <span>The next cross-platform,</span>
+        <br>
+        <span>extensible DICOM viewer</span>
+      </div>
+
+      <span class="fa-stack fa-2x">
+        <i class="fa fa-circle fa-stack-2x text-primary"></i>
+        <i class="fa fa-windows fa-stack-1x fa-inverse"></i>
+      </span>
+      <span class="fa-stack fa-2x">
+        <i class="fa fa-circle fa-stack-2x text-primary"></i>
+        <i class="fa fa-apple fa-stack-1x fa-inverse"></i>
+      </span>
+      <span class="fa-stack fa-2x">
+        <i class="fa fa-circle fa-stack-2x text-primary"></i>
+        <i class="fa fa-linux fa-stack-1x fa-inverse"></i>
+      </span>
+
+      <p class="about-p">
+        <a href="#about" class="page-scroll btn btn-xl">Tell Me More</a>
+        <a href="mailto:info@orobix.com"  class="btn btn-xl btn-left-1em" data-toggle="modal" data-target="#downloadModal">Request a Beta</a>
+      </p>
+
+      <p class="promotion">
+        <i class="promotion"><a class="system-req" href="#systemReqModal" data-toggle="modal">System requirements</a></i>
+      </p>
+      <!-- <p class="promotion-2">
+        <i class="promotion-2">Last version 1.2.3 - Apr 15 2015</i>
+      </p> -->
+    </div>
+  </div>
+
+  <div class="modal fade" id="systemReqModal" tabIndex="-1" role="dialog" aria-labelledby="systemReqModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+          <h4 class="modal-title centercontents" id="systemReqModalLabel">System Requirements</h4>
+        </div>
+        <div class="modal-body">
+
+          <div role="tabpanel">
+            <ul class="nav nav-tabs" role="tablist">
+              <li role="presentation" class="active"><a class="tab-req" href="#minimum" aria-controls="minimum" role="tab" data-toggle="tab">Minimum</a></li>
+              <li role="presentation"><a class="tab-req" href="#recommended" aria-controls="recommended" role="tab" data-toggle="tab">Recommended</a></li>
+
+            </ul>
+
+            <div class="tab-content">
+              <div role="tabpanel" class="tab-pane fade in active" id="minimum">
+                <table class="table table-left table-striped">
+                  <tr>
+                    <td><b>CPU:</b></td>
+                    <td>Dual Core 2.66 GHz</td>
+                  </tr>
+                  <tr>
+                    <td><b>RAM:</b></td>
+                    <td>2 GB</td>
+                  </tr>
+                  <tr>
+                    <td><b>OS:</b></td>
+                    <td>Windows XP/7/8, OSX 10.8+, Ubuntu 64bit</td>
+                  </tr>
+                  <tr>
+                    <td><b>Free Disk Space:</b></td>
+                    <td>150 Mb</td>
+                  </tr>
+                </table>
+              </div>
+              <div role="tabpanel" class="tab-pane fade" id="recommended">
+                <table class="table table-left table-striped">
+                  <tr>
+                    <td><b>CPU:</b></td>
+                    <td>Quad Core 3.00 GHz</td>
+                  </tr>
+                  <tr>
+                    <td><b>RAM:</b></td>
+                    <td>8 GB</td>
+                  </tr>
+                  <tr>
+                    <td><b>OS:</b></td>
+                    <td>Windows XP/7/8, OSX 10.8+, Ubuntu 64bit</td>
+                  </tr>
+                  <tr>
+                    <td><b>Free Disk Space:</b></td>
+                    <td>1 GB</td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+</header>
+
+
+        <section id="about" class="bg-light-gray">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 text-center">
+        <h2 class="section-heading">About <span class="orobix-font">DICOM&#xe601;NEXT</span></h2>
+        <h3 class="section-subheading text-muted"><span class="orobix-font">DICOM&#xe601;NEXT</span> is a lightweight, full-fledged, fast DICOM viewer.</h3>
+      </div>
+    </div>
+    <div class="row text-center">
+      <div class="col-md-4">
+        <span class="fa-stack fa-4x">
+          <i class="fa fa-circle fa-stack-2x text-primary"></i>
+          <i class="fa fa-user fa-stack-1x fa-inverse"></i>
+        </span>
+        <h4 class="service-heading">User Interface</h4>
+        <p class="text-muted"><span class="orobix-font">DICOM&#xe601;NEXT</span> sports an innovative HTML5 user interface and relies on Canvas and WebGL for rendering. It has been carefully designed for delivering a smooth, snappy experience on any dataset.</p>
+      </div>
+      <div class="col-md-4">
+        <span class="fa-stack fa-4x">
+          <i class="fa fa-circle fa-stack-2x text-primary"></i>
+          <i class="fa fa-database fa-stack-1x fa-inverse"></i>
+        </span>
+        <h4 class="service-heading">PACS</h4>
+        <p class="text-muted"><span class="orobix-font">DICOM&#xe601;NEXT</span> can connect to a Picture Archiving and Communication System (PACS) and access studies on an institutional archive for visualization and measurement.</p>
+      </div>
+      <div class="col-md-4">
+        <span class="fa-stack fa-4x">
+          <i class="fa fa-circle fa-stack-2x text-primary"></i>
+          <i class="fa fa-desktop fa-stack-1x fa-inverse"></i>
+        </span>
+        <h4 class="service-heading">Multi Platform</h4>
+        <p class="text-muted"><span class="orobix-font">DICOM&#xe601;NEXT</span> runs on MS Windows, Mac OS X and Linux. Installation is a breeze.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="modules">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 text-center">
+        <h2 class="section-heading"><span class="orobix-font">DICOM&#xe601;NEXT features</span></h2>
+        <!-- <h3 class="section-subheading text-muted">Each module has its own workflow</h3> -->
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-4 col-sm-offset-2 modules-item">
+        <a href="#modulesModal1" class="modules-link" data-toggle="modal">
+          <div class="modules-hover">
+            <div class="modules-hover-content">
+              <i class="fa fa-plus fa-3x"></i>
+            </div>
+          </div>
+          <img src="img/modules/modules_1.png" class="img-responsive" alt="Image interactions"></img>
+        </a>
+        <div class="modules-caption">
+          <h4>Image interactions</h4>
+        </div>
+      </div>
+      <div class="col-md-4 col-sm-offset-2 modules-item">
+        <a href="#modulesModal2" class="modules-link" data-toggle="modal">
+          <div class="modules-hover">
+            <div class="modules-hover-content">
+              <i class="fa fa-plus fa-3x"></i>
+            </div>
+          </div>
+          <img src="img/modules/modules_2.png" class="img-responsive" alt="Regions of Interest"></img>
+        </a>
+        <div class="modules-caption">
+          <h4>Regions of Interest</h4>
+        </div>
+      </div>
+      <div class="col-md-4 col-sm-offset-2 modules-item">
+        <a href="#modulesModal3" class="modules-link" data-toggle="modal">
+          <div class="modules-hover">
+            <div class="modules-hover-content">
+              <i class="fa fa-plus fa-3x"></i>
+            </div>
+          </div>
+          <img src="img/modules/modules_4.png" class="img-responsive" alt="Full screen and customizable viewer"></img>
+        </a>
+        <div class="modules-caption">
+          <h4>Full screen and customizable viewer</h4>
+        </div>
+      </div>
+      <div class="col-md-4 col-sm-offset-2 modules-item">
+        <a href="#modulesModal4" class="modules-link" data-toggle="modal">
+          <div class="modules-hover">
+            <div class="modules-hover-content">
+              <i class="fa fa-plus fa-3x"></i>
+            </div>
+          </div>
+          <img src="img/modules/modules_7.png" class="img-responsive" alt="Multi-planar reformatting"></img>
+        </a>
+        <div class="modules-caption">
+          <h4>Multi-planar reformatting</h4>
+        </div>
+      </div>
+      <div class="col-md-4 col-sm-offset-2 modules-item">
+        <a href="#modulesModal5" class="modules-link" data-toggle="modal">
+          <div class="modules-hover">
+            <div class="modules-hover-content">
+              <i class="fa fa-plus fa-3x"></i>
+            </div>
+          </div>
+          <img src="img/modules/modules_5.png" class="img-responsive" alt="Cross-reference lines"></img>
+        </a>
+        <div class="modules-caption">
+          <h4>Cross-reference lines</h4>
+        </div>
+      </div>
+      <div class="col-md-4 col-sm-offset-2 modules-item">
+        <a href="#modulesModal6" class="modules-link" data-toggle="modal">
+          <div class="modules-hover">
+            <div class="modules-hover-content">
+              <i class="fa fa-plus fa-3x"></i>
+            </div>
+          </div>
+          <img src="img/modules/modules_9.png" class="img-responsive" alt="Import images from local disk or CD/DVD drive"></img>
+        </a>
+        <div class="modules-caption">
+          <h4>Import images from local disks or PACS</h4>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="modules-modal modal fade" id="modulesModal1" tabIndex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-content">
+    <div class="close-modal" data-dismiss="modal">
+      <div class="lr">
+        <div class="rl">
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-lg-offset-2">
+          <div class="modal-body">
+            <h2>Image interactions</h2>
+            <img class="img-responsive" src="img/modules/modules_1.png" alt="Image interactions"></img>
+            <p>Fluid zooming, panning and window/level control. Preset window/level settings for Computed Tomography.</p>
+            <button type="button" class="btn btn-vmtklab" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </div>
 
-    
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<div class="modules-modal modal fade" id="modulesModal2" tabIndex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-content">
+    <div class="close-modal" data-dismiss="modal">
+      <div class="lr">
+        <div class="rl">
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-lg-offset-2">
+          <div class="modal-body">
+            <h2>Region of Interest</h2>
+            <img class="img-responsive" src="img/modules/modules_2.png" alt="Region of Interest"></img>
+            <p>ROIs and measurements, such as segment lengths, fiducial points and text annotations.</p>
+            <button type="button" class="btn btn-vmtklab" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modules-modal modal fade" id="modulesModal3" tabIndex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-content">
+    <div class="close-modal" data-dismiss="modal">
+      <div class="lr">
+        <div class="rl">
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-lg-offset-2">
+          <div class="modal-body">
+            <h2>Full screen and customizable viewer</h2>
+            <img class="img-responsive" src="img/modules/modules_4.png" alt="Full screen and customizable viewer"></img>
+            <p>Multiple series on screen can be arranged in a user-defined range of layouts.</p>
+            <button type="button" class="btn btn-vmtklab" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modules-modal modal fade" id="modulesModal4" tabIndex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-content">
+    <div class="close-modal" data-dismiss="modal">
+      <div class="lr">
+        <div class="rl">
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-lg-offset-2">
+          <div class="modal-body">
+            <h2>Multi-planar reformatting</h2>
+            <img class="img-responsive" src="img/modules/modules_7.png" alt="Multi-planar reconstruction"></img>
+            <p>Visualization of series in coronal, sagittal, axial or user-defined, multi-planar orientation.</p>
+            <button type="button" class="btn btn-vmtklab" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modules-modal modal fade" id="modulesModal5" tabIndex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-content">
+    <div class="close-modal" data-dismiss="modal">
+      <div class="lr">
+        <div class="rl">
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-lg-offset-2">
+          <div class="modal-body">
+            <h2>Cross-reference lines</h2>
+            <img class="img-responsive" src="img/modules/modules_5.png" alt="Cross-reference lines"></img>
+            <p>Display of cross-reference lines to easily locate the same area on series in multiple orientations.</p>
+            <button type="button" class="btn btn-vmtklab" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modules-modal modal fade" id="modulesModal6" tabIndex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-content">
+    <div class="close-modal" data-dismiss="modal">
+      <div class="lr">
+        <div class="rl">
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-lg-offset-2">
+          <div class="modal-body">
+            <h2>Import images from local disk or PACS.</h2>
+            <img class="img-responsive" src="img/modules/modules_9.png" alt="Import images from local disk or PACS"></img>
+            <p>Import images from a hard drive or CD/DVD disks. The application provides a safe connection to a PACS system. Query/retrieve and push services are available.</p>
+            <button type="button" class="btn btn-vmtklab" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</script>
+
+<!-- <section id="tutorials">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 text-center">
+        <h2 class="section-heading">Video Tutorials</h2>
+        <h3 class="section-subheading text-muted">Learn how to use VMTKLab basic functionalities</h3>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-4 col-sm-12 col-xs-12 modules-item centercontents">
+        <iframe width="360" height="203" src="http://www.youtube.com/embed/T-xl_w2MULk?rel=0&amp;showinfo=0" frameBorder="0" allowFullScreen></iframe>
+        <div class="modules-caption">
+          <h4>Viewer Workflow</h4>
+          <p class="text-muted">Compose and visualize scenes from individual datasets.</p>
+        </div>
+      </div>
+      <div class="col-md-4 col-sm-12 col-xs-12 modules-item centercontents">
+        <iframe width="360" height="203" src="http://www.youtube.com/embed/9zSgEjTvrzQ?rel=0&amp;showinfo=0" frameBorder="0" allowFullScreen></iframe>
+        <div class="modules-caption">
+          <h4>VMTKLab workflows</h4>
+          <p class="text-muted">Save your workflows and share your data or resume it whenever you like.</p>
+        </div>
+      </div>
+      <div class="col-md-4 col-sm-12 col-xs-12 modules-item centercontents">
+        <iframe width="360" height="203" src="http://www.youtube.com/embed/4Ni7G6R61Zg?rel=0&amp;showinfo=0" frameBorder="0" allowFullScreen></iframe>
+        <div class="modules-caption">
+          <h4>Centerlines</h4>
+          <p class="text-muted">Compute centerlines of branching tubular structures.</p>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-4 col-sm-12 col-xs-12 modules-item centercontents">
+        <iframe width="360" height="203" src="http://www.youtube.com/embed/V3-O5b0HPmk?rel=0&amp;showinfo=0" frameBorder="0" allowFullScreen></iframe>
+        <div class="modules-caption">
+          <h4>Surface Preprocessing</h4>
+          <p class="text-muted">Surface clipping, flow extensions, surface remeshing and more</p>
+        </div>
+      </div>
+      <div class="col-md-4 col-sm-12 col-xs-12 modules-item centercontents">
+        <iframe width="360" height="203" src="http://www.youtube.com/embed/FpDAs1immr8?rel=0&amp;showinfo=0" frameBorder="0" allowFullScreen></iframe>
+        <div class="modules-caption">
+          <h4>Image segmentation</h4>
+          <p class="text-muted">Reconstruct the 3D surface of a vascular segment from CT or MR images using level sets.</p>
+        </div>
+      </div>
+      <div class="col-md-4 col-sm-12 col-xs-12 modules-item centercontents">
+        <iframe width="360" height="203" src="http://www.youtube.com/embed/SvX3vXrIvN8?rel=0&amp;showinfo=0" frameBorder="0" allowFullScreen></iframe>
+        <div class="modules-caption">
+          <h4>Active Tubes</h4>
+          <p class="text-muted">Segmentation tutorial using active tubes algorithm.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+ -->
+
+
+      </div>
+    </div>
+
+    <script src="js/jquery-2.1.1.min.js"></script>
     <script src="js/modernizr.custom.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+    <script src="js/cbpAnimatedHeader.js"></script>
+    <script src="js/classie.js"></script>
+    <script src="js/landing.js"></script>
+
   </body>
+
 </html>
